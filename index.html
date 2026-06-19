@@ -199,31 +199,26 @@ function renderDoctors(doctors) {
     div.className = "card";
 
     div.innerHTML = `
-      <img
-        src="${d.image_url}"
-        alt="${d.name}"
-        style="
-          width:100%;
-          height:280px;
-          object-fit:cover;
-          border-radius:10px;
-          margin-bottom:15px;
-        "
-      >
+      <img src="${d.image_url}"
+           alt="${d.name}"
+           style="
+             width:100%;
+             height:260px;
+             object-fit:cover;
+             border-radius:12px;
+             margin-bottom:12px;
+           ">
 
       <h3>${d.name}</h3>
-
       <p><strong>${d.specialization}</strong></p>
-
       <p>${d.experience}</p>
-
       <p>${d.description}</p>
     `;
 
     container.appendChild(div);
   });
 }
-function fillServiceDropdown(services) {
+  function fillServiceDropdown(services) {
 const select = document.getElementById("serviceSelect");
 
 services.forEach(s => {
