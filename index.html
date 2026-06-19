@@ -162,8 +162,8 @@ WhatsApp
 </a>
 
 <script>
-const API_URL = "https://script.google.com/macros/s/AKfycbx_xUa0L95fUuaHGdEF7TKvNeRCYqWJZTzvSZ9VeDWKUB31PjqrVOp-P_w15oXRl797/exec";
-
+const API_URL = "https://script.google.com/macros/s/AKfycbx_xUa0L95fUuaHGdEF7TKvNeRCYqWJZTzvSZ9VeDWKUB31PjqrVOp-P_w15oXRl797/exec" + new Date().getTime();
+  
 async function loadData() {
 const res = await fetch(API_URL);
 const data = await res.json();
